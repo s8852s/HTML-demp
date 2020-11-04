@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 只會選取到沒有href的a */
+        a {
+            color: green;
+        }
+        a:link{
+            color: rgb(128, 128, 128);
+        }
+        
+        
+        a:visited{
+            color: pink;
+        }
+        /* 優先權會比較高 */
+        body a:hover{
+            color: royalblue;
+        }
+        a:active{
+            color: yellow;
+        }
+        a:focus {
+            color: red;
+        }
+        
+        /* a:hover{
+            color: royalblue;
+        } */
+        /* 兩個狀態同時成立時看優先權 */
+    </style>
+</head>
+<body>
+    <a href="http://google.com">GOOGLE</a>
+    <a href="http://yahoo.com.tw">YAHOO</a>
+    <a href="http://msn.com">MSN</a>
+    <a href="http://yahoo.com.jp">YAHOOJP</a>
+    <a>TEXT沒功能</a>
+    <a href="">TEXT</a>
+
+</body>
+</html>

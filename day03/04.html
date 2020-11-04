@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* ">"不計算優先權分數 */
+    p > span{
+        color: #fa0;
+        font-size: 50px;
+    }
+    p span{
+        color: pink;
+    }
+
+    div>div>span{
+        color: yellow;
+    }
+    div>span{
+        color: indigo;
+    }
+</style>
+<body>
+    <p class="box" id="amos">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus sunt voluptas laboriosam necessitatibus <span>span</span> quo delectus eum error odit quibusdam facere, non illum blanditiis placeat assumenda, <span>span</span>veniam reprehenderit ea in illo.
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus sunt voluptas laboriosam necessitatibus <span>span</span> quo delectus eum error odit quibusdam facere, non illum blanditiis placeat assumenda, <span>span</span>veniam reprehenderit ea in illo.
+    </p>
+    <div>
+        <div>
+            Lorem <span>span</span>ipsum dolor sit amet consectetur adipisicing elit. Odit consequuntur ratione nam molestias similique reiciendis nisi eius, quasi deleniti totam!
+            <span>span</span>
+        </div>
+    </div>
+
+</body>
+</html>

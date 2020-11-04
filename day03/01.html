@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .aa {
+        padding: 40px;
+        border: grey solid;
+        background-color: red;
+    }
+    .bb {
+        background-color: hotpink;
+        padding: 50px;
+    }
+
+    div span {
+        color: red;
+    }
+    body span {
+        color: gold;
+    }
+
+</style>
+<!-- 雖然都是class但指定的對象不同，當aa背景顏色為紅色，bb背景顏色也是紅色的原因是因為背景顏色預設是透明 -->
+<body>
+    <div class="aa">
+        <div class="bb">
+            Lorem ipsum <span> dolor</span> sit, amet consectetur adipisicing elit. Esse iste consequatur voluptatum deserunt blanditiis nemo sit hic natus culpa molestias?
+        </div>
+    </div>
+</body>
+</html>

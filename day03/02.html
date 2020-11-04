@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        font-size: 25px;
+    }
+    h1.box{
+        color: gray;
+    }
+    div.box{
+        color: red;
+    }
+    /* 反向選取器 */
+    h1:not([class]){
+        color: yellow;
+    }
+</style>
+<body>
+    <span class="class">span box</span>
+    <div class="box">div box</div>
+    <h1 class="box">h1 box</h1>
+    <section class="box">section box</section>
+    <span>span</span>
+    <div>div</div>
+    <h1>h1</h1>
+    <section>section</section>
+</body>
+</html>

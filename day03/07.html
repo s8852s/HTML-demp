@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box:hover {
+            background-color: #fa0;
+        }
+        .box:hover img {
+            width: 300px;
+            transform: scale(1.2);
+            
+        }
+        .box {
+            width: 250px;
+            border: 2px solid #ccc;
+            padding: 5px;
+            margin: 30px;
+            transition :1s;
+            overflow: hidden;
+        /* 金餘第11天 */
+        }
+        .box img {
+            width: 100%;
+            transform: scale(1);
+            transition: 1s;
+        }
+        .box:hover img {
+            transform: scale(1.4);
+            height: 100%;
+        }
+        .pic {
+            width: 150px;
+            height: 150px;
+            /* border: 3px solid red; */
+            overflow: hidden;
+            /* overflow: visible; */
+            /* overflow: auto; */
+            /* overflow: scroll; 強制顯示卷軸 */
+            /* 定義元素超過某個範圍的時候該如何呈現 */
+        }
+        h3 {
+            margin: 0;
+        }
+
+        .box .pic{
+            width: 100%;
+            height: 150px;
+            overflow: hidden;
+            background-color: #ffffff;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="pic">
+            <!-- picsum -->
+        <img src="https://picsum.photos/300/200/?random=1">
+        </div>
+        
+        <h3>考生戀愛，取得</h3>
+        <p>此次查找你在，使得時間幽默道理故障相比物品水果關鍵焦點大陸創作快車，投資大連親自職工金幣地理，草魚。</p>
+    </div>
+
+    <div class="pic">
+        <img src="https://picsum.photos/300/200/?random=1">
+    </div>
+</body>
+</html>
