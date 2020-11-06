@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pic3 {
+
+            display: none;
+            /* 消失，不展示，位置會被第4張圖片佔走 */
+
+            visibility: hidden;
+            /* 被隱藏，看不見但仍然存在 */
+        }
+
+        .pic5 {
+            visibility: hidden;
+            /* display: none; */
+        }
+
+        div:hover .pic5 {
+            visibility: visible;
+            /* display: ; */
+        }
+    </style>
+</head>
+
+<body>
+    <img class="pic1" src="https://picsum.photos/300/200/?random=1">
+    <img class="pic2" src="https://picsum.photos/300/200/?random=2">
+    <img class="pic3" src="https://picsum.photos/300/200/?random=3">
+    <img class="pic4" src="https://picsum.photos/300/200/?random=4">
+
+    <div class="pic">
+        <img class="pic5" src="https://picsum.photos/300/200/?random=7">
+        <img class="pic6" src="https://picsum.photos/300/200/?random=8">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur illum voluptates magnam beatae, quo at
+            nesciunt eum reiciendis blanditiis vero?</p>
+
+
+    </div>
+
+</body>
+
+</html>
