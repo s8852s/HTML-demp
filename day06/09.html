@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            font-size: 50px;
+        }
+
+        /* p::before {
+            content: "";
+            color: blue;
+            width: 0;
+            height: 0;
+             display: block; */
+        /* border-top: transparent 50px solid;
+        border-left: 90px solid black;
+        border-bottom: 90px solid transparent;
+        } */
+
+        p::after {
+            content: "";
+            /* color: blue; */
+            width: 0;
+            height: 0;
+            display: block;
+            border-right: 90px solid black;
+            border-bottom: 90px solid transparent;
+            border-left: 90px solid black;
+
+        }
+    </style>
+</head>
+
+<body>
+    <p></p>
+</body>
+
+</html>

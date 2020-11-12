@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/0885191546.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../reset.css">
+    <style>
+        .wrap {
+            width: 100%;
+            display: flex;
+            background-color: #2B3238;
+            color: white;
+            /* text-align: center; */
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .getInTouch,
+        .contactUs {
+            width: 50%;
+            height: 550px;
+        }
+
+        .getInTouch.content {
+            width: 87%;
+            margin-left: 180px;
+        }
+
+        h6 {
+            font-size: 12px;
+            line-height: 14px;
+            font-weight: 300;
+            color: #1a81fd;
+
+            margin-bottom: 28px;
+            letter-spacing: 1px;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 400;
+            margin-bottom: 25px;
+        }
+
+        p {
+            font-weight: 100;
+            font-size: 14px;
+        }
+
+        .info p {
+            font-size: 17px;
+        }
+
+        .item:hover:not(.address) p {
+            font-size: 17px;
+            color: #25EBFF;
+        }
+
+        .address,
+        .email,
+        .tel {
+            display: flex;
+        }
+
+        .getInTouch,
+        .contactUs {
+            width: 50%;
+            margin-top: 40px;
+        }
+
+
+        .getInTouch>p {
+            font-size: 14px;
+            line-height: 26px;
+            width: 65%;
+            margin-bottom: 35px;
+        }
+
+        i {
+            /* background-color: tomato; */
+            width: 16px;
+            color: #25EBFF;
+            font-size: 25px;
+            /* display: inline-block; */
+            margin-right: 40px;
+            margin-left: 5px;
+            text-align: center;
+        }
+
+        .item {
+            /* text-align: center; */
+            margin-bottom: 22px;
+        }
+
+        input,
+        textarea {
+            background-color: #2B3238;
+            opacity: 100%;
+            border: none;
+            border-bottom: 1px solid white;
+            outline: none;
+            color: white;
+            font-size: 12px;
+            font-family: 'Montserrat', sans-serif;
+            padding-bottom: 18px;
+            margin-bottom: 45px;
+            margin-top: 20px;
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+
+        }
+
+        a p {
+            color: white;
+            text-decoration: none;
+            background-color: #1A81FD;
+            font-weight: 700;
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            width: 140px;
+            letter-spacing: 1px;
+            font-size: 12px;
+            border-radius: 35px;
+            padding: 20px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a p:hover {
+            background-color: #25EBFF;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="getInTouch">
+            <div class="getInTouch content">
+                <h6>GET IN TOUCH</h6>
+                <h1>Contact Details</h1>
+                <p>If you are interested in working with us then please drop us a line, we would love to hear from you.
+                </p>
+                <div class="info">
+                    <div class="item address">
+                        <div>
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <p>121 Wallstreet Street, New York , USA</p>
+                        </div>
+                    </div>
+                    <div class="item email">
+                        <div>
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <p>info@imperion.com</p>
+                        </div>
+                    </div>
+                    <div class="item tel">
+                        <div>
+                            <i class="fas fa-phone-volume"></i>
+                        </div>
+                        <div>
+                            <p>+800 1234 56 78</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contactUs">
+            <div class="contactUs content">
+                <h6>CONTACT US</h6>
+                <h1>Drop Us A Line</h1>
+                <input type="text" name="" id="" placeholder="Name*" size="80">
+                <input type="email" name="" id="" placeholder="E-mail*" size="80">
+                <textarea name="" id="" cols="80" rows="3" placeholder="Message"></textarea>
+                <div>
+                    <a href="#">
+                        <p> SEND MESSAGE</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
