@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+
+        /* @media 裝置 and (條件) and (條件){ 
+            符合條件後要執行的CSS } */
+
+        /* @media screen and (min-width: 768px) and (max-width: 1024px) {
+            div {
+                background-color: blueviolet;
+            }
+        } */
+        @media screen and (min-width: 768px) {
+            div {
+                background-color: blueviolet;
+            }
+        }
+
+        @media screen and (min-width: 992px) {
+            div {
+                background-color: yellow;
+            }
+        }
+
+        @media screen and (min-width: 1200px) {
+            div {
+                background-color: palevioletred;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

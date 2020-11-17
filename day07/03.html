@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {
+            /* width: 100%; */
+            margin: auto;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        @media screen and (min-width: 768px) {
+            .wrap {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .item {
+                width: calc(33.333333% - 20px);
+                margin: 10px;
+                /* 兩種寫法差別是下面的margin是浮動的 */
+                /* width: 31.25%;
+                margin: 1.041666%; */
+
+            }
+        }
+
+        @media screen and (min-width: 1200px) {
+            .wrap {
+                width: 960px;
+                display: flex;
+            }
+
+            .item {
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="item item1">
+            <div class="pic">
+                <img src="https://picsum.photos/300/200/?random=1">
+            </div>
+            <div class="txt">
+                <p>免費版無派無關阿摩斯形式體現給他人大擔。免費版無派無關阿摩斯形式體現給他人大擔。</p>
+            </div>
+        </div>
+        <div class="item item2">
+            <div class="pic">
+                <img src="https://picsum.photos/300/200/?random=2">
+            </div>
+            <div class="txt">
+                <p>免費版無派無關阿摩斯形式體現給他人大擔。免費版無派無關阿摩斯形式體現給他人大擔。</p>
+            </div>
+        </div>
+        <div class="item item3">
+            <div class="pic">
+                <img src="https://picsum.photos/300/200/?random=3">
+            </div>
+            <div class="txt">
+                <p>免費版無派無關阿摩斯形式體現給他人大擔。免費版無派無關阿摩斯形式體現給他人大擔。</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
