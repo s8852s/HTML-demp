@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .wrap{
+            /* max-width: 1200px; */
+            width: 100%;
+            border: 1px red solid;
+            margin: auto;
+        }
+        .mv{
+            margin: auto;
+            width: 50%;
+            height: 0;
+            padding-bottom: 28.125%;
+            background-color: royalblue;
+            /* padding-bottom/top若設置百分比時會看父層寬度 */
+            position: relative;
+        }
+
+        .mv iframe{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+
+        .map{
+            margin: auto;
+            width: 50%;
+            height: 0;
+            padding-bottom: 37.5%;
+            position: relative;
+        }
+        .map iframe {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrap">
+        <div class="mv">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ikT1O4plOf4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d10227.256703026555!2d121.50886814221406!3d25.00414959294174!3m2!1i1024!2i768!4f13.1!5e0!3m2!1szh-TW!2stw!4v1605677523508!5m2!1szh-TW!2stw" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </div>
+</body>
+</html>
